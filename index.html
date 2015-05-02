@@ -1515,7 +1515,8 @@
          return '<h3>' + key + '</h3>' + 
          '<p>' + y + ' Kandidaten am ' + x + '</p>'
          } )
-            
+  .color([ "blue", "green", "darkorange", "lightblue", "lightgreen", "orange" ])
+
         chart.xAxis
   .tickFormat(
       function(d) {return d3.time.format('%d.%m.%Y')(new Date(d*1000*3600*24));}
